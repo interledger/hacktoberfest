@@ -1,0 +1,110 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Section from '../components/Section.astro';
+---
+
+<Layout title="Hacktoberfest 2023">
+	<main>
+		<Section class="hero">
+			<header>
+				<p><img src="img/interledger-logo.svg" alt="Interledger" class="logo--interledger"/> does</p>
+				<h1>Hacktoberfest 2023</h1>
+				<img src="img/hacktober10.svg" alt="https://docs.astro.build/en/getting-started/" class="logo--hacktober" />
+			</header>
+		</Section>
+
+		<Section class="padding--large align--center">
+			<h2>This template is not very opinionated</h2>
+			<p>Feel free to add different types of content</p>
+			<p>It's highly encouraged to use the Section component just to make the spacing look nice</p>
+			<p>The <a href="">Astro documentation</a> is also very helpful for reference</p>
+		</Section>
+
+		<Section>
+			<div class="two-col">
+				<div>
+					<h2>How long do you want the header to be?</h2>
+					<p>Hacktoberfest events are happening all month long so you can join your friends day or night, from dusk to dawn, as you work to complete your pull/merge requests.</p>
+				</div>
+				<div class="two-col__img">
+					<img src="img/laptop.svg" alt="Illustration of a laptop displaying the code for spinning up an Ethereum settlement engine" />
+				</div>
+			</div>
+		</Section>
+
+		<Section class="padding--large">
+			<h2>Maybe you want to put a call to action here</h2>
+			<p>Just write HTML and CSS</p>
+			<p>Do peek into the img folder to see what other images are available</p>
+			<p>Also feel free to write more styles if you want to</p>
+		</Section>
+		
+		<Section>
+			<div class="two-col">
+				<div class="two-col__img">
+					<img src="img/mac.svg" alt="Illustration of a desktop displaying the code for spinning up a XRP settlement engine" />
+				</div>
+				<div>
+					<h2>Some header</h2>
+					<p>Whether your event is in-person, virtual or a combination of both, make sure you let the community know about it!</p>
+				</div>
+			</div>
+		</Section>
+	</main>
+</Layout>
+
+<style is:global>
+	@media screen and (min-width: 480px) {
+		.hero header {
+			width: max-content;
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+
+	.logo--interledger {
+		width: 6em;
+	}
+
+	.logo--hacktober {
+		margin-top: var(--space-s);
+		width: 4em;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.hero p {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.25em;
+	}
+
+	.two-col {
+		display: grid;
+		gap: var(--space-m);
+		align-items: center;
+	}
+
+	@media screen and (max-width: 639px) {
+		.two-col__img {
+			text-align: center;
+		}
+	}
+	
+	@media screen and (min-width: 640px) {
+		.two-col {
+			grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+		}
+	}
+
+	.padding--large {
+		padding-top: var(--space-3xl);
+		padding-bottom: var(--space-3xl);
+	}
+
+	.align--center {
+		text-align: center;
+	}
+</style>
