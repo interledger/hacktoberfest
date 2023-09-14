@@ -7,46 +7,73 @@ import Section from '../components/Section.astro';
 	<main>
 		<Section class="hero">
 			<header>
-				<p><img src="img/interledger-logo.svg" alt="Interledger" class="logo--interledger"/> does</p>
+				<div>
+					<img src="img/interledger-logo.svg" alt="Interledger" class="logo--interledger"/>
+					<button>Get help on Slack</button>
+				</div>
 				<h1>Hacktoberfest 2023</h1>
 				<img src="img/hacktober10.svg" alt="https://docs.astro.build/en/getting-started/" class="logo--hacktober" />
 			</header>
 		</Section>
 
 		<Section class="padding--large align--center">
-			<h2>This template is not very opinionated</h2>
-			<p>Feel free to add different types of content</p>
-			<p>It's highly encouraged to use the Section component just to make the spacing look nice</p>
-			<p>The <a href="">Astro documentation</a> is also very helpful for reference</p>
+			<h2>About Hacktoberfest</h2>
+			<p>
+				Hacktoberfest is an annual event by DigitalOcean that promotes open source contributions throughout October. It aims to support and
+				give back to open source projects that underpin much of today's tech infrastructure. Over the past decade, thousands of
+				participants, both coders and non-coders, have joined to support their favorite projects, improve their skills, and connect with
+				like-minded open source enthusiasts.
+			</p>
 		</Section>
 
 		<Section>
 			<div class="two-col">
 				<div>
-					<h2>How long do you want the header to be?</h2>
-					<p>Hacktoberfest events are happening all month long so you can join your friends day or night, from dusk to dawn, as you work to complete your pull/merge requests.</p>
+					<h2>Our Hacktoberfest Story</h2>
+					<p>
+						Here at Interledger, Hacktoberfest is something truly close to our hearts. It all started in 2022 when we ventured into our very
+						first Hacktoberfest campaign. Even though it was our rookie year, the community rallied behind us with some incredible
+						contributions. Those experiences have fueled our enthusiasm to return this year with an even more engaging mentorship program, a
+						richer learning experience, and some seriously awesome rewards.
+					</p>
 				</div>
 				<div class="two-col__img">
-					<img src="img/laptop.svg" alt="Illustration of a laptop displaying the code for spinning up an Ethereum settlement engine" />
+					<img src="img/hacktober10.svg" alt="Illustration of a laptop displaying the code for spinning up an Ethereum settlement engine" />
 				</div>
 			</div>
 		</Section>
 
-		<Section class="padding--large">
-			<h2>Maybe you want to put a call to action here</h2>
-			<p>Just write HTML and CSS</p>
-			<p>Do peek into the img folder to see what other images are available</p>
-			<p>Also feel free to write more styles if you want to</p>
+		<Section>
+			<h2>Ways to Contribute</h2>
+			<p>
+				You can contribute to Interledger in various ways, and all accepted contributions come with the opportunity to earn Interledger Swag!
+			</p>
+			<div class="two-col">
+				<div>
+					<h3>Contribute to Open Issues</h3>
+					<p>
+							Explore our curated list of Hacktoberfest issues, ready for you to pick up. View Issues
+					</p>
+				</div>
+				<div>
+					<h3>Interledger Hacktoberfest Events</h3>
+					<p>
+							Organize or Join us for exciting Hacktoberfest events throughout the month.
+					</p>
+				</div>
+			</div>
 		</Section>
-		
+
 		<Section>
 			<div class="two-col">
 				<div class="two-col__img">
 					<img src="img/mac.svg" alt="Illustration of a desktop displaying the code for spinning up a XRP settlement engine" />
 				</div>
 				<div>
-					<h2>Some header</h2>
-					<p>Whether your event is in-person, virtual or a combination of both, make sure you let the community know about it!</p>
+					<h2>Stuck? We're Here to Help You</h2>
+					<p>Whether you're a seasoned contributor or just starting out, our community is here to support you. Join us on GitHub and Slack to get assistance, collaborate with others, and make the most of your Hacktoberfest journey.</p>
+					<p>We look forward to your contributions and celebrating open source together!</p>
+					<p>Join us on <a href="https://join.slack.com/share/enQtNTg5NTExMTA4MDI1Ny0wZTUzMmY3YWRlMDUyZmZkZTFmMTZmN2E3ZTA3YjFmOTAwYTkwNjVmMGYwZjA1ZWUwZDI3MDM2OTA2MDI4NjE2" target="_blank">Slack</a></p>
 				</div>
 			</div>
 		</Section>
@@ -80,6 +107,12 @@ import Section from '../components/Section.astro';
 		align-items: center;
 		gap: 0.25em;
 	}
+
+    .hero div {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
 
 	.two-col {
 		display: grid;
