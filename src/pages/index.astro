@@ -43,16 +43,16 @@ import Section from '../components/Section.astro';
 			</div>
 		</Section>
 
-		<Section>
+		<Section class="align--center">
 			<h2>Ways to Contribute</h2>
 			<p>
 				You can contribute to Interledger in various ways, and all accepted contributions come with the opportunity to earn Interledger Swag!
 			</p>
-			<div class="two-col">
+			<div class="two-col padding--large">
 				<div>
 					<h3>Contribute to Open Issues</h3>
 					<p>
-							Explore our curated list of Hacktoberfest issues, ready for you to pick up. View Issues
+							Explore our curated list of Hacktoberfest issues, ready for you to pick up. View <a href="https://github.com/search?q=topic%3Ahacktoberfest+org%3Ainterledger+fork%3Atrue&type=repositories" target="_blank" >Issues</a>
 					</p>
 				</div>
 				<div>
@@ -108,11 +108,12 @@ import Section from '../components/Section.astro';
 		gap: 0.25em;
 	}
 
-    .hero div {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
+	.hero div {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin-bottom: var(--space-s);
+	}
 
 	.two-col {
 		display: grid;
@@ -130,6 +131,11 @@ import Section from '../components/Section.astro';
 		.two-col {
 			grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
 		}
+	}
+
+	.padding--small {
+		padding-top: var(--space-s);
+		padding-bottom: var(--space-s);
 	}
 
 	.padding--large {
