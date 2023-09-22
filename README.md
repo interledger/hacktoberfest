@@ -1,3 +1,5 @@
+This site is now deprecated. The Hacktoberfest page has been moved to become part of https://github.com/interledger/interledger.org-developers
+
 # Hacktoberfest 2023
 
 This is the source code for our Hacktoberfest 2023 laning page. Our informational web properties are built using [Astro](https://astro.build/), including all our documentation sites.
